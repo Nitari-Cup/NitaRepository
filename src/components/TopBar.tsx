@@ -2,15 +2,15 @@ import { Link } from "react-router-dom"
 
 function TopBar(){
     return(
-        <div>
+        <div className="">
             <Link to="/">
-                <button className="btn btn-ghost">Home Page</button>
+                <button className="btn btn-ghost">Home</button>
             </Link>
             <Link to="/inputreview">
-                <button className="btn btn-ghost">InputReview Page Page</button>
+                <button className="btn btn-ghost">InputReview</button>
             </Link>
             <Link to="/review">
-                <button className="btn btn-ghost">Review Page Page</button>
+                <button className="btn btn-ghost">Review</button>
             </Link>
             <Link to="/*">
             </Link>

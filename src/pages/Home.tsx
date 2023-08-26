@@ -5,6 +5,9 @@ function Home () {
         <div>
             <TopBar />
             <h1>HomePage</h1>
+            <article>
+                <h1>hello</h1>
+            </article>
         </div>
     )
 }
