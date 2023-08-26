@@ -6,8 +6,6 @@ function Review() {
         <div>
             <TopBar />
             <div className="p-2"><Card /></div>
-            <div className="p-2"><Card /></div>
-            <div className="p-2"><Card /></div>
         </div>
     )
 }
