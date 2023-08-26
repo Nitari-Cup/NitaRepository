@@ -1,4 +1,4 @@
-function Review() {
+function Form() {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       const formData = new FormData(e.currentTarget);
@@ -72,4 +72,4 @@ function Review() {
     </div>
   )
 }
-export default Review
+export default Form

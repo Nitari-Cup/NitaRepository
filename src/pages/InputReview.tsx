@@ -1,11 +1,11 @@
-import Review from "../components/Review";
+import Form from "../components/Form";
 import TopBar from "../components/TopBar";
 
 function InputReview() {
     return(
         <div>
             <TopBar />
-            <Review/>
+            <Form />
         </div>
     )
 }

@@ -1,10 +1,11 @@
+import Card from "../components/Card";
 import TopBar from "../components/TopBar";
 
 function Review() {
     return (
         <div>
             <TopBar />
-            <h1>Review</h1>
+            <Card />
         </div>
     )
 }
