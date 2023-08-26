@@ -8,11 +8,11 @@ function Form() {
 
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
+        <div className="flex flex-col items-center justify-center h-screen">
             <form className="mb-4" onSubmit={handleSubmit}>
                 <label>
                     レビュータイトル
-                    <input type="text" name="reviewTitle" placeholder="" className="input input-bordered w-full max-w-xs bg-gray-100" />
+                    <input type="text" name="reviewTitle" placeholder="" className="input input-bordered w-full max-w-xs" />
                 </label>
             </form>
             <div className="mb-4">
@@ -32,7 +32,7 @@ function Form() {
             <div className="mb-4">
                 スペック<br/>
                 モデル
-            <select className="w-full max-w-xs select select-bordered bg-gray-100">
+            <select className="w-full max-w-xs select select-bordered">
               <option disabled selected>
                 モデル
               </option>
@@ -44,7 +44,7 @@ function Form() {
               <option>16インチPro（M2Pro、M2Max）</option>
             </select><br/>
             メモリ
-            <select className="w-full max-w-xs select select-bordered bg-gray-100">
+            <select className="w-full max-w-xs select select-bordered">
               <option disabled selected>
                 メモリ
               </option>
@@ -53,7 +53,7 @@ function Form() {
               <option>24GB</option>
             </select><br/>
             SSD
-            <select className="w-full max-w-xs select select-bordered bg-gray-100">
+            <select className="w-full max-w-xs select select-bordered">
               <option disabled selected>
               SSD
               </option>
@@ -64,7 +64,7 @@ function Form() {
             <form onSubmit={handleSubmit}>
                 <div className="mb-4">
                     レビュー<br/>
-                    <input type="text" name="reviewText" placeholder="" className="input input-bordered w-full max-w-xs bg-gray-100" />
+                    <input type="text" name="reviewText" placeholder="" className="input input-bordered w-full max-w-xs" />
                 </div>
                 <button type="submit" className="btn btn-primary">送信</button>
             </form>
