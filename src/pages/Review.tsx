@@ -5,7 +5,9 @@ function Review() {
     return (
         <div>
             <TopBar />
-            <Card />
+            <div className="p-2"><Card /></div>
+            <div className="p-2"><Card /></div>
+            <div className="p-2"><Card /></div>
         </div>
     )
 }

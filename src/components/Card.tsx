@@ -6,11 +6,11 @@ function Card() {
             <div className="card-body">
                 <h1 className="card-title">Card title</h1>
                 <div className="rating rating-lg">
-                    <input type="radio" name="rating-8" className="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-8" className="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-8" className="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-8" className="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-8" className="mask mask-star-2 bg-orange-400" />
+                    <input name="rating-8" className="mask mask-star-2 bg-orange-400" />
+                    <input name="rating-8" className="mask mask-star-2 bg-orange-400" />
+                    <input name="rating-8" className="mask mask-star-2 bg-orange-400" />
+                    <input name="rating-8" className="mask mask-star-2 bg-orange-400" />
+                    <input name="rating-8" className="mask mask-star-2 bg-orange-400" />
                 </div>
                 <h2 className="">08/26</h2>
                 <h2 className="">スペック</h2>
