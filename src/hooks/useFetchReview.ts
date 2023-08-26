@@ -4,7 +4,7 @@ import axios from 'axios';
 interface ReviewData {
   [key: string]: {
     purchase_date: string;
-    review: string;
+    review: number;
     title: string;
     discription: string;
     model: string;
