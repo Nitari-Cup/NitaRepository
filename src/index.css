@@ -1,6 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import './App.css';
-@import 'daisyui';
-@import 'node_modules/modern-normalize/modern-normalize.css';
+/* @import './App.css';
+@import 'daisyui'; */
+/* @import 'node_modules/modern-normalize/modern-normalize.css'; */
