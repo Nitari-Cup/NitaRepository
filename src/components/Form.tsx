@@ -53,8 +53,8 @@ function Form() {
               <span className="label-text font-bold font-mono ">
                 Please Type your review!!
               </span>
-              <div className="mb-4 pt-4">
-                <button onClick={handleSubmit} className="btn btn-base-100 ">
+              <div className="mb-4 pl-8">
+                <button onClick={handleSubmit} className="btn btn-xs btn-base-100 ">
                   送信
                 </button>
               </div>
