@@ -17,58 +17,66 @@ const QuestionCard = ({
   index: number;
   setFormState: any;
 }) => {
-  const [radioState, setRadioState] = useState<boolean>(true);
+  const [answer, setAnswer] = useState<boolean>(true);
   const [isFormDirty, setIsFormDirty] = useState<boolean>(false);
 
   useEffect(() => {
-    if (radioState && isFormDirty) {
-      const formVal: any = {
-        recommended: question.true,
-        radioState: radioState,
-        next_question: question.next_question,
-      };
-      setFormState(formVal);
-    } else if (!radioState && isFormDirty) {
-      const formVal: any = {
-        recommended: question.false,
-        radioState: radioState,
-        next_question: question.next_question,
-      };
-      setFormState(formVal);
+    setIsFormDirty(false);
+
+    if (isFormDirty) {
+      if (answer) {
+        const formVal: any = {
+          recommended: question.true,
+          next_question: question.next_question,
+          is_end: false,
+        };
+        console.log(formVal);
+        setFormState(formVal);
+      }
+      if (!answer) {
+        const formVal: any = {
+          recommended: question.false,
+          next_question: question.next_question,
+          is_end: true,
+        };
+
+        console.log(formVal);
+        setFormState(formVal);
+      }
     }
-  }, [radioState, isFormDirty]);
+  }, [answer, isFormDirty]);
 
   return (
-    <div className="flex flex-col items-center justify-center  p-10 bg-base-100">
-      <div className="flex flex-row border-solid border-2 border-x-0 border-t-0 border-slate-700 pb-4">
-        <div>Q{index}</div>
-        <div>{question.text}</div>
+    <div className="w-full items-end justify-center mt-20">
+      <div className="grid grid-cols-4 p-5 bg-base-content text-neutral-content">
+        <div className="font-extrabold text-6xl text-right">Q{index}</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className="whitespace-nowrap mt-10 text-xl font-extrabold text-5xl">
+          {question.text}
+        </div>
       </div>
-      <div className="flex flex-row">
-        <label className="label cursor-pointer">
-          <span className="label-text">はい</span>
-          <input
-            type="radio"
-            name="radio-10"
-            className="radio checked:bg-red-500"
-            onChange={() => {
-              setIsFormDirty(true);
-              setRadioState(true);
-            }}
-          />
-        </label>
-        <label className="label cursor-pointer">
-          <input
-            type="radio"
-            name="radio-10"
-            className="radio checked:bg-red-500"
-            onChange={() => {
-              setIsFormDirty(true);
-              setRadioState(false);
-            }}
-          />
-          <span className="label-text">いいえ</span>
-        </label>
+      <div className="flex flex-row justify-evenly mt-10">
+        <button
+          onClick={() => {
+            setIsFormDirty(true);
+            setAnswer(true);
+          }}
+          className="btn btn-active btn-info text-lg hover:bg-sky-700"
+        >
+          はい
+        </button>
+        <button
+          onClick={() => {
+            setIsFormDirty(true);
+            setAnswer(false);
+          }}
+          className="btn btn-active btn-neutral"
+        >
+          いいえ
+        </button>
       </div>
     </div>
   );
