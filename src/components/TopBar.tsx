@@ -9,7 +9,11 @@ function TopBar(){
                 <button className="btn btn-ghost">InputReview</button>
             </Link>
             <Link to="/review">
-                <button className="btn btn-ghost">Review</button>            </Link>
+                <button className="btn btn-ghost">Review</button> 
+            </Link>
+            <Link to="/list">
+                <button className="btn btn-ghost">List</button> 
+            </Link>
             <Link to="/*">
             </Link>
         </div>
