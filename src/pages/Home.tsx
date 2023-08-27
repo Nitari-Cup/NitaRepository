@@ -1,37 +1,67 @@
+import QuestionCard from "../components/QuestionCard";
 import TopBar from "../components/TopBar";
-// import { fetchReview } from "../components/api/fetchReview.api";
-// import { useState, useEffect } from "react";
+import { fetchQuestion } from "../components/api/fetchQuestion.api";
+import { useState, useEffect } from "react";
+import Recommend from "../components/Recommend";
+
+interface FormState {
+  recommended: string;
+  next_question: string;
+  is_end: boolean;
+}
 
 function Home() {
-//   const [questions, setQuestions] = useState({});
-//   const [isLoading, setIsLoading] = useState(true);
+  const [questions, setQuestions] = useState<object>({});
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [formState, setFormState] = useState<FormState>({
+    recommended: "0",
+    next_question: "1",
+    is_end: false,
+  });
 
-//   useEffect(async () => {
-//     await fetchReview().then((res) => {
-//       if (res) {
-//         setQuestions(res.data);
-//         setIsLoading(false);
-//         console.log(res.data);
-//       }
-//     });
-//   }, []);
+  const fetchData = async () => {
+    try {
+      const res = await fetchQuestion();
+      if (res) {
+        setQuestions(res.data);
+        setIsLoading(false);
+      } else {
+        console.log("error while fetching");
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <>
       <TopBar />
-      {/* {isLoading ? (
-        ""
-      ) : (
-        <>
-          {Object.keys(questions).map((keyName, i: number) => {
+      <div className="h-screen flex justify-center">
+        {(() => {
+          if (
+            !isLoading &&
+            !formState.is_end &&
+            formState.next_question != "0"
+          ) {
             return (
-              <div key={i}>
-                <div>{questions[keyName].title}</div>
-                <div>{questions[keyName].discription}</div>
-              </div>
+              <QuestionCard
+                question={questions[Number(formState.next_question)]}
+                index={Number(formState.next_question)}
+                setFormState={setFormState}
+              />
             );
-          })}
-        </>
-      )} */}
+          } else if (
+            (!isLoading && formState.is_end) ||
+            formState.next_question == "0"
+          ) {
+            return <Recommend text={formState.recommended} />;
+          }
+        })()}
+      </div>
     </>
   );
 }

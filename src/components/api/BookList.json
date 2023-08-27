@@ -1,52 +1,52 @@
 {
-    "bookList":[
-        {
-            "title": "M1チップ搭載13インチMacBookAir",
-            "image": "https://www.apple.com/v/macbook-air/q/images/overview/compare/compare_mba_m1__dsgh2hoxlkae_large_2x.png",
-            "description": "MacBookの中で一番安くて学生にお勧め、学割で11万円台から買える。正直これで十分",
-            "macLink": "https://www.apple.com/jp/shop/buy-mac/macbook-air/13%E3%82%A4%E3%83%B3%E3%83%81-m1"
-        },
-        {
-            "title": "M2チップ搭載13インチMacBookAir",
-            "image": "https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/routers/compare_mba_13_15__tnw1r9b3f5e2_large_2x.png",
-            "description": "予算20万円で最新のものを使いたいならどうぞ。メモリ256GBはメモリ枚なのでM1のほうがSSDは早かったりする。",
-            "macLink": "https://www.apple.com/jp/shop/buy-mac/macbook-air/13%E3%82%A4%E3%83%B3%E3%83%81-m2"
-        },
-        {
-            "title": "M2チップ搭載15インチMacBookAir",
-            "image": "https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/routers/compare_mba_13_15__tnw1r9b3f5e2_large_2x.png",
-            "description": "画面が大きい！ただそれだけ。",
-            "macLink": "https://www.apple.com/jp/shop/buy-mac/macbook-air/15%E3%82%A4%E3%83%B3%E3%83%81-m2"
-        },
-        {
-            "title": "M2チップ搭載13インチMacBookPro",
-            "image": "https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/routers/compare_mbp_13__jugmxc0u0haq_large_2x.png",
-            "description": "Proには外部出力モニターが二枚になります。M2なら余裕でサクサク。メモリ16GBは欲しい。",
-            "macLink": "https://www.apple.com/jp/shop/buy-mac/macbook-pro/13%E3%82%A4%E3%83%B3%E3%83%81"
-        },
-        {
-            "title": "M2チップ搭載14インチMacBookPro",
-            "image": "https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/routers/compare_mbp_14_16__reijn4mpe76q_large_2x.png",
-            "description": "14インチは使いやすくておすすめ。ちょうどよい。だが高い",
-            "macLink": "https://www.apple.com/jp/shop/buy-mac/macbook-pro/14%E3%82%A4%E3%83%B3%E3%83%81"
-        },
-        {
-            "title": "M2チップ搭載16インチMacBookPro",
-            "image": "https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/routers/compare_mbp_14_16__reijn4mpe76q_large_2x.png",
-            "description": "16インチでけえ。iPadとデュアルモニターいかがですか？",
-            "macLink": "https://www.apple.com/jp/shop/buy-mac/macbook-pro/16%E3%82%A4%E3%83%B3%E3%83%81"
-        },
-        {
-            "title": "ASUS Chromebook C425TA",
-            "image": "https://drh2.img.digitalriver.com/DRHM/Storefront/Company/asusjp/images/product/detail/22Q1_C425TA-AJ0375/1000x1000/13_1000x1000.jpg",
-            "description": "Intel最高!",
-            "macLink": "https://jp.store.asus.com/store/asusjp/ja_JP/pd/ThemeID.4850018000/productID.5600991100"
-        },
-        {
-            "title": "Mac Pro",
-            "image": "https://store.storeimages.cdn-apple.com/8567/as-images.apple.com/is/mac-pro-tower-hero-splitter-2023?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1684181485853",
-            "description": "人柱が買うものです。お値段なんと最大100万円誰が買うねん。Windows買おう。ゲームもできる。",
-            "macLink": "https://www.apple.com/jp/shop/buy-mac/mac-pro"
-        }
-    ]
+"bookList":[
+    {
+        "title": "M1チップ搭載13インチMacBookAir",
+        "image": "https://store.storeimages.cdn-apple.com/8567/as-images.apple.com/is/mac-card-40-macbook-air-202110?wid=1200&hei=1000&fmt=p-jpg&qlt=95&.v=1664576115052",
+        "description": "MacBookの中で一番安くて学生にお勧め、学割で11万円台から買える。正直これで十分",
+        "macLink": "https://www.apple.com/jp/shop/buy-mac/macbook-air/13%E3%82%A4%E3%83%B3%E3%83%81-m1"
+    },
+    {
+        "title": "M2チップ搭載13インチMacBookAir",
+        "image": "https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/routers/compare_mba_13_15__tnw1r9b3f5e2_large_2x.png",
+        "description": "予算20万円で最新のものを使いたいならどうぞ。メモリ256GBはメモリ枚なのでM1のほうがSSDは早かったりする。",
+        "macLink": "https://www.apple.com/jp/shop/buy-mac/macbook-air/13%E3%82%A4%E3%83%B3%E3%83%81-m2"
+    },
+    {
+        "title": "M2チップ搭載15インチMacBookAir",
+        "image": "https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/routers/compare_mba_13_15__tnw1r9b3f5e2_large_2x.png",
+        "description": "画面が大きい！ただそれだけ。",
+        "macLink": "https://www.apple.com/jp/shop/buy-mac/macbook-air/15%E3%82%A4%E3%83%B3%E3%83%81-m2"
+    },
+    {
+        "title": "M2チップ搭載13インチMacBookPro",
+        "image": "https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/routers/compare_mbp_13__jugmxc0u0haq_large_2x.png",
+        "description": "Proには外部出力モニターが二枚になります。M2なら余裕でサクサク。メモリ16GBは欲しい。",
+        "macLink": "https://www.apple.com/jp/shop/buy-mac/macbook-pro/13%E3%82%A4%E3%83%B3%E3%83%81"
+    },
+    {
+        "title": "M2チップ搭載14インチMacBookPro",
+        "image": "https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/routers/compare_mbp_14_16__reijn4mpe76q_large_2x.png",
+        "description": "14インチは使いやすくておすすめ。ちょうどよい。だが高い",
+        "macLink": "https://www.apple.com/jp/shop/buy-mac/macbook-pro/14%E3%82%A4%E3%83%B3%E3%83%81"
+    },
+    {
+        "title": "M2チップ搭載16インチMacBookPro",
+        "image": "https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/routers/compare_mbp_14_16__reijn4mpe76q_large_2x.png",
+        "description": "16インチでけえ。iPadとデュアルモニターいかがですか？",
+        "macLink": "https://www.apple.com/jp/shop/buy-mac/macbook-pro/16%E3%82%A4%E3%83%B3%E3%83%81"
+    },
+    {
+        "title": "ASUS Chromebook C425TA",
+        "image": "https://drh2.img.digitalriver.com/DRHM/Storefront/Company/asusjp/images/product/detail/22Q1_C425TA-AJ0375/1000x1000/13_1000x1000.jpg",
+        "description": "Intel最高!",
+        "macLink": "https://jp.store.asus.com/store/asusjp/ja_JP/pd/ThemeID.4850018000/productID.5600991100"
+    },
+    {
+        "title": "Mac Pro",
+        "image": "https://store.storeimages.cdn-apple.com/8567/as-images.apple.com/is/mac-pro-tower-hero-splitter-2023?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1684181485853",
+        "description": "人柱が買うものです。お値段なんと最大100万円誰が買うねん。Windows買おう。ゲームもできる。",
+        "macLink": "https://www.apple.com/jp/shop/buy-mac/mac-pro"
+    }
+]
 }

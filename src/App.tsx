@@ -6,11 +6,10 @@ import NoMatch from './pages/Nomatch'
 import List from './pages/List'
 import './index.css';
 
-function App() {
-
+function App() {  
   return (
     <>
-      <div>
+      <div className="relative">
         <Routes>
           <Route path="/"element={<Home/>}/>
           <Route path="/inputreview"element={<InputReview/>}/>
