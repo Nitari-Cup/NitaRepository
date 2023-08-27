@@ -48,13 +48,9 @@ const QuestionCard = ({
 
   return (
     <div className="w-full items-end justify-center mt-20">
-      <div className="grid grid-cols-4 p-5 bg-base-content text-neutral-content">
-        <div className="font-extrabold text-6xl text-right">Q{index}</div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div className="whitespace-nowrap mt-10 text-xl font-extrabold text-5xl">
+      <div className="p-5 bg-base-content text-neutral-content">
+        <div className="font-extrabold text-6xl text-left">Q{index}</div>
+        <div className="mt-10 pl-20 w-75 text-xl font-extrabold text-5xl">
           {question.text}
         </div>
       </div>
