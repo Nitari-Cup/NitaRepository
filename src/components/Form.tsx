@@ -2,22 +2,28 @@ import { useEffect, useState } from "react";
 import { useCookies } from "react-cookie";
 import { postReview } from "./api/postReview.api";
 
-function Form() {
-  const [cookies, setCookie, removeCookie] = useCookies([
-    "purchase_date",
-    "model",
-  ]);
+interface FormState {
+  title: string;
+  purchase_date: string;
+  review: string;
+  discription: string;
+  model: string;
+  create_at: string;
+}
 
-  const initialState: any = {
+function Form() {
+  const [cookies] = useCookies(["purchase_date", "model"]);
+
+  const initialState: FormState = {
     title: "",
-    purchase_date: cookies.purchase_date | "情報がありません",
+    purchase_date: cookies.purchase_date || "情報がありません",
     review: "",
     discription: "",
-    model: cookies.model | "情報がありません",
+    model: cookies.model || "情報がありません",
     create_at: "",
   };
 
-  const [formState, setFormState] = useState<object>(initialState);
+  const [formState, setFormState] = useState<FormState>(initialState); // Fixed the type here
   const [val, setVal] = useState<string>("5");
   const [isPostSucceeded, setIsPostSucceeded] = useState<boolean>(false);
 
@@ -60,7 +66,7 @@ function Form() {
                     value={i + 1}
                     key={i}
                     onChange={(e) => {
-                      setFormState({ ...formState, review: i + 1 });
+                      setFormState({ ...formState, review: String(i + 1) });
                       setVal(e.target.value);
                     }}
                     type="radio"
