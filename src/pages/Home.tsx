@@ -1,37 +1,55 @@
+import QuestionCard from "../components/QuestionCard";
 import TopBar from "../components/TopBar";
-// import { fetchReview } from "../components/api/fetchReview.api";
-// import { useState, useEffect } from "react";
+import { fetchQuestion } from "../components/api/fetchQuestion.api";
+import { useState, useEffect } from "react";
+
+interface FormState {
+  radioState: boolean;
+  recommended: string;
+  next_question: string;
+}
 
 function Home() {
-//   const [questions, setQuestions] = useState({});
-//   const [isLoading, setIsLoading] = useState(true);
+  const [questions, setQuestions] = useState({});
+  const [formState, setFormState] = useState<FormState>({
+    radioState: true,
+    recommended: "",
+    next_question: "",
+  });
 
-//   useEffect(async () => {
-//     await fetchReview().then((res) => {
-//       if (res) {
-//         setQuestions(res.data);
-//         setIsLoading(false);
-//         console.log(res.data);
-//       }
-//     });
-//   }, []);
+  const fetchData = async () => {
+    try {
+      const res = await fetchQuestion();
+      if (res) {
+        setQuestions(res.data);
+      } else {
+        console.log("error while fetching");
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+    if(formState.next_question != "0"){
+      console.log(formState)
+    }
+  }, [formState]);
+
   return (
     <>
       <TopBar />
-      {/* {isLoading ? (
-        ""
-      ) : (
-        <>
-          {Object.keys(questions).map((keyName, i: number) => {
-            return (
-              <div key={i}>
-                <div>{questions[keyName].title}</div>
-                <div>{questions[keyName].discription}</div>
-              </div>
-            );
-          })}
-        </>
-      )} */}
+      {Object.keys(questions).map((keyName, i: number) => {
+        return (
+          <QuestionCard
+            question={questions[keyName]}
+            key={i}
+            index={i + 1}
+            setFormState={setFormState}
+          />
+        );
+      })}
     </>
   );
 }
